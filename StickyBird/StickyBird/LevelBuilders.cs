@@ -26,6 +26,11 @@ namespace StickyBird
             return AddLineObject(screen, "line", x, y, rotation, angVelocity);
         }
 
+        public static LineObject AddHalfLineObject(PlayScreen screen, float x, float y, float rotation, float angVelocity)
+        {
+            return AddLineObject(screen, "lineh2", x, y, rotation, angVelocity);
+        }
+
         public static LineObject AddLineObject(PlayScreen screen, string sprite, float x, float y, float rotation, float angVelocity)
         {
             LineObject line1 = new LineObject(World.CurrentWorld, sprite);
@@ -34,6 +39,15 @@ namespace StickyBird
             line1.AngularVelocity = angVelocity;
 
             return line1;
+        }
+
+        public static ElectricFence AddFence(PlayScreen screen, float x, float y, float rotation, float angVelocity)
+        {
+            ElectricFence fence = new ElectricFence(World.CurrentWorld);
+            fence.Rotation = rotation;
+            AddObject(fence, screen, x, y);
+
+            return fence;
         }
 
         public static Spikes AddSpikes(PlayScreen screen, float x, float y)
@@ -72,6 +86,14 @@ namespace StickyBird
             return bird;
         }
 
+        public static RedBall AddRedBall(PlayScreen screen, int x, int y, float angVel)
+        {
+            RedBall r = new RedBall(World.CurrentWorld);
+            r.AngularVelocity = angVel;
+            AddObject(r, screen, x, y);
+            return r;
+        }
+
         public static StarObject AddStar(PlayScreen screen, int x, int y)
         {
             StarObject so = new StarObject(World.CurrentWorld);
@@ -93,17 +115,18 @@ namespace StickyBird
 
     public class Level1Builder : ILevelBuilder
     {
-        private StarObject star1;
-        private StarObject star2;
-        private StarObject star3;
-        private PlayScreen screen;
+        protected StarObject star1;
+        protected StarObject star2;
+        protected StarObject star3;
+        protected PlayScreen screen;
         #region ILevelBuilder Members
 
-        public void BuildLevel(Screens.PlayScreen screen)
+        public virtual void BuildLevel(Screens.PlayScreen screen)
         {
             this.screen = screen;
 
             Factory.AddLineObject(screen, 150, 300, 0, 0);
+
             star1 = Factory.AddStar(screen, 225, 170);
             Factory.AddLineObject(screen, 400, 300, 0, 0);
             star2 = Factory.AddStar(screen, 400, 250);
@@ -115,22 +138,52 @@ namespace StickyBird
             Factory.AddNest(screen, 650, 280);
             
             Factory.AddSpikeRow(screen, -100, GameConstants.ScreenHeight - 30, 10);
+        }
 
-            /*
+        public virtual void resetGame(StickyBirdObj bird)
+        {
+            star1.Visible = true;
+            star2.Visible = true;
+            star3.Visible = true;
+
+            screen.AddCollidableObjects(star1);
+            screen.AddCollidableObjects(star2);
+            screen.AddCollidableObjects(star3);
+
+            bird.UpdatePosition(150, 250);
+            bird.Stop();
+            bird.IsAlive = true;
+        }
+
+        #endregion
+    }
+
+    public class Level2Builder : ILevelBuilder
+    {
+        private StarObject star1;
+        private StarObject star2;
+        private StarObject star3;
+        private PlayScreen screen;
+
+        #region ILevelBuilder Members
+
+        public void BuildLevel(Screens.PlayScreen screen)
+        {
+            this.screen = screen;
+
+            Factory.AddSpikeRow(screen, -100, GameConstants.ScreenHeight - 30, 10);
             Factory.AddLineObject(screen, 90, 400, 0, 0);
-
-            Factory.AddStar(screen, 205, 230);
-
-            Factory.AddLineObject(screen, "lighting", 215, 380, (float) Math.PI/2, 0);
-
+            star1 = Factory.AddStar(screen, 205, 230);
+            Factory.AddFence(screen, 215, 380, (float) Math.PI/2, 0);
+            star2 = Factory.AddStar(screen, 400, 260);
             LineObject l = Factory.AddLineObject(screen, 325, 400, 0, 0);
             Factory.AddBackAndForthTransform(l, 35, 175, 0);
-
-            Factory.AddLineObject(screen, "lighting", 585, 380, (float)Math.PI / 2, 0);
-            */
-
-            //l = Factory.AddLineObject(screen, 710, 400, 0, 0); // end
-            //l.RequiredCameraPosition = new Microsoft.Xna.Framework.Vector2(600, 0);
+            star3 = Factory.AddStar(screen, 575, 230);
+            Factory.AddFence(screen, 585, 380, (float)Math.PI / 2, 0);
+            l = Factory.AddLineObject(screen, 710, 400, 0, 0); // end
+            StickyBirdObj bird = Factory.AddBird(screen, 120, 250);
+            screen.SetBird(bird);
+            Factory.AddNest(screen,700, 380);
         }
 
         public void resetGame(StickyBirdObj bird)
@@ -143,10 +196,75 @@ namespace StickyBird
             screen.AddCollidableObjects(star2);
             screen.AddCollidableObjects(star3);
 
-            bird.UpdatePosition(150, 250);
+            bird.UpdatePosition(120, 250);
             bird.Stop();
+            bird.IsAlive = true;
         }
 
         #endregion
     }
+
+    public class Level3Builder : Level1Builder
+    {
+        public override void BuildLevel(Screens.PlayScreen screen)
+        {
+            this.screen = screen;
+
+            Factory.AddSpikeRow(screen, -100, GameConstants.ScreenHeight - 30, 10);
+            Factory.AddLineObject(screen, 90, 400, 0, 0);
+            star1 = Factory.AddStar(screen, 205, 230);
+            
+            star2 = Factory.AddStar(screen, 400, 260);
+            LineObject l = Factory.AddHalfLineObject(screen, 325, 400, 0, 0);
+            Factory.AddBackAndForthTransform(l, 35, 175, 0);
+            star3 = Factory.AddStar(screen, 575, 230);
+            
+            l = Factory.AddLineObject(screen, 710, 400, 0, 0); // end
+            StickyBirdObj bird = Factory.AddBird(screen, 120, 250);
+            screen.SetBird(bird);
+            Factory.AddNest(screen, 700, 380);
+        }
+
+        public override void resetGame(StickyBirdObj bird)
+        {
+            star1.Visible = true;
+            star2.Visible = true;
+            star3.Visible = true;
+
+            screen.AddCollidableObjects(star1);
+            screen.AddCollidableObjects(star2);
+            screen.AddCollidableObjects(star3);
+
+            bird.UpdatePosition(150, 250);
+            bird.Stop();
+            bird.IsAlive = true;
+        }
+    }
+
+    public class Level4Builder : ILevelBuilder
+    {
+        public void BuildLevel(PlayScreen screen)
+        {
+            Factory.AddSpikeRow(screen, -100, GameConstants.ScreenHeight - 30, 10);
+            Factory.AddLineObject(screen, 90, 400, 0, 0);
+
+            Factory.AddRedBall(screen, 250, 250, 0.03f);
+            Factory.AddRedBall(screen, 500, 250, 0.03f);
+
+            Factory.AddLineObject(screen, 710, 400, 0, 0); // end
+
+            StickyBirdObj bird = Factory.AddBird(screen, 120, 250);
+            screen.SetBird(bird);
+
+            Factory.AddNest(screen, 700, 380);
+        }
+
+        public void resetGame(StickyBirdObj bird)
+        {
+            bird.UpdatePosition(150, 250);
+            bird.Stop();
+            bird.IsAlive = true;
+        }
+    }
+    
 }

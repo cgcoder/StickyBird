@@ -1,1 +1,2 @@
+Z:\cs\StickyBird\StickyBird\StickyBirdContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
 C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBirdContent\obj\Windows Phone\Debug\ResolveAssemblyReference.cache

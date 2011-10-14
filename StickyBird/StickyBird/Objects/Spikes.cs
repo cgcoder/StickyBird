@@ -16,27 +16,27 @@ namespace StickyBird.Objects
 
         #region IStickOn Members
 
-        public bool IsStuck()
+        public override bool IsStuck()
         {
             return sticker != null;
         }
 
-        public void SetStickingObject(ISticker sticker)
+        public override void SetStickingObject(ISticker sticker)
         {
             this.sticker = sticker;
         }
 
-        public ISticker GetStickingObject()
+        public override ISticker GetStickingObject()
         {
             return sticker;
         }
 
-        public void MoveStickingObject()
+        public override void MoveStickingObject()
         {
 
         }
 
-        public void ReleaseStickingObject()
+        public override void ReleaseStickingObject()
         {
             sticker = null;
         }

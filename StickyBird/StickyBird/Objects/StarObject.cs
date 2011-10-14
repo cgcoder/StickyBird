@@ -4,19 +4,28 @@ using System.Linq;
 using System.Text;
 using Juicy.Engine;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace StickyBird.Objects
 {
-    public class StarObject : LineObject
+    public class StarObject : CircleObject
     {
+        private DynamicGameObject rotatorObj;
+
         public StarObject(World currentWorld)
-            : base(currentWorld)
+            : base(currentWorld, 25/2)
         {
             this.SpriteName = "stars";
             this.IsGravityDisabled = true;
-            InitAnimator();
+            rotatorObj = new DynamicGameObject(currentWorld);
+            rotatorObj.IsGravityDisabled = true;
+            rotatorObj.SpriteName = "rotator";
+            rotatorObj.Rotation = (float) (RandomUtil.Random.NextDouble() * Math.PI * 2);
+            rotatorObj.AngularVelocity = 0.15f;
+            this.Type = ObjectType.Star;
+            //InitAnimator();
         }
-
+        
         protected void InitAnimator()
         {
             FrameAnimator a = new FrameAnimator(25, 25);
@@ -24,21 +33,40 @@ namespace StickyBird.Objects
             seq.Mode = AnimationSequence.AnimationMode.LOOP;
             a.AddAnimation(seq);
             a.CurrentAnimationName = "rotating";
-            this.Type = ObjectType.Star;
             this.Animator = a;
+        }
+
+        protected override void updateChildObjs()
+        {
+            base.updateChildObjs();
+            rotatorObj.UpdatePosition(this.Position.X, this.Position.Y);
         }
 
         public override void OnObjManagerAdd(GameObjectManager gom)
         {
-            int width = 25;
             base.OnObjManagerAdd(gom);
+            rotatorObj.OnObjManagerAdd(gom);
+        }
 
-            if (spriteName == null || spriteName.Length == 0) return;
+        public override void Update(long timer)
+        {
+            rotatorObj.Update(timer);
+            base.Update(timer);
+        }
 
-            boundary = new Rectangle(0, 0, (int)(width * scale), (int)(sprite.Height * scale));
-            center.X = width / 2;
-            center.Y = sprite.Height / 2;
-            anchor = center;
+        public override void Draw(SpriteBatch batch)
+        {
+            base.Draw(batch);
+            rotatorObj.Draw(batch);
+        }
+
+        public override bool Visible
+        {
+            set 
+            {
+                base.Visible = value;
+                rotatorObj.Visible = value;
+            }
         }
     }
 }

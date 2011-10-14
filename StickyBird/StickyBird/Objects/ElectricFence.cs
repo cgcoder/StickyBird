@@ -11,6 +11,7 @@ namespace StickyBird.Objects
             : base(w, "lighting")
         {
             this.Type = ObjectType.Deadly;
+            this.IsGravityDisabled = true;
         }
     }
 }

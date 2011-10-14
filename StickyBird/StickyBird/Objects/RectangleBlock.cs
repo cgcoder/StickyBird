@@ -22,12 +22,12 @@ namespace StickyBird.Objects
 
         #region IStickOn Members
 
-        public bool IsStuck()
+        public virtual bool IsStuck()
         {
             return sticker != null;
         }
 
-        public void SetStickingObject(ISticker sticker)
+        public virtual void SetStickingObject(ISticker sticker)
         {
             this.sticker = sticker;
             if (sticker != null)
@@ -36,12 +36,12 @@ namespace StickyBird.Objects
             }
         }
 
-        public ISticker GetStickingObject()
+        public virtual ISticker GetStickingObject()
         {
             return sticker;
         }
 
-        public void MoveStickingObject()
+        public virtual void MoveStickingObject()
         {
             if (sticker != null)
             {
@@ -50,7 +50,7 @@ namespace StickyBird.Objects
             }
         }
 
-        public void ReleaseStickingObject()
+        public virtual void ReleaseStickingObject()
         {
             sticker = null;
         }

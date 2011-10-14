@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="ILevelBuilder.cs" />
     <Compile Include="LevelBuilders.cs" />
+    <Compile Include="Objects\CircleObject.cs" />
     <Compile Include="Objects\ElectricFence.cs" />
     <Compile Include="Objects\LineObject.cs" />
     <Compile Include="Objects\CollisionDetectors.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Objects\RectangleBlock.cs" />
     <Compile Include="Objects\RedBall.cs" />
     <Compile Include="Objects\Shapes.cs" />
+    <Compile Include="Objects\Sparkle.cs" />
     <Compile Include="Objects\Spikes.cs" />
     <Compile Include="Objects\StarObject.cs" />
     <Compile Include="Objects\WoodBlock.cs" />

@@ -5,7 +5,11 @@ Content\stone.xnb
 Content\spikes.xnb
 Content\woodh.xnb
 Content\line.xnb
-Content\lighting.xnb
 Content\nest.xnb
+Content\lighting.xnb
 Content\stars.xnb
 Content\Background.xnb
+Content\lineh.xnb
+Content\sparkle.xnb
+Content\rotator.xnb
+Content\bird2.xnb

@@ -7,7 +7,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\menuFont.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\menuFont.xnb</Output>
       <Time>2011-07-31T16:13:07.4825904-07:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\redbean.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\redbean.xnb</Output>
       <Time>2011-09-24T16:19:57.4133916-07:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\bird.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\bird.xnb</Output>
       <Time>2011-09-28T23:53:50.2701596-07:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\stone.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\stone.xnb</Output>
       <Time>2011-09-28T23:36:14.2707599-07:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\spikes.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\spikes.xnb</Output>
       <Time>2011-09-29T00:13:55.6851054-07:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\woodh.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\woodh.xnb</Output>
       <Time>2011-09-29T01:02:47.6958068-07:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\line.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\line.xnb</Output>
       <Time>2011-10-02T11:59:10.6012413-07:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\nest.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\nest.xnb</Output>
       <Time>2011-10-03T00:45:20.2775563-07:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\lighting.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\lighting.xnb</Output>
       <Time>2011-10-03T21:45:42.992123-07:00</Time>
     </Item>
     <Item>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\stars.xnb</Output>
-      <Time>2011-10-13T21:35:25.6601427-07:00</Time>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\stars.xnb</Output>
+      <Time>2011-10-05T23:10:06.6149097-07:00</Time>
     </Item>
     <Item>
       <Source>Background.png</Source>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\Background.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\Background.xnb</Output>
       <Time>2011-10-06T00:08:23.1348992-07:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\lineh.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\lineh.xnb</Output>
       <Time>2011-10-12T00:03:50.5671767-07:00</Time>
     </Item>
     <Item>
@@ -115,66 +115,49 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\sparkle.xnb</Output>
+      <Output>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\sparkle.xnb</Output>
       <Time>2011-10-12T23:45:40.6873307-07:00</Time>
-    </Item>
-    <Item>
-      <Source>rotator.png</Source>
-      <Name>rotator</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\rotator.xnb</Output>
-      <Time>2011-10-13T21:35:24.6010821-07:00</Time>
-    </Item>
-    <Item>
-      <Source>bird2.png</Source>
-      <Name>bird2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\bird2.xnb</Output>
-      <Time>2011-10-13T23:15:28.2144692-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
+      <ContentProjectGUID>{1FA44C3C-CC7C-4132-8BB1-BCAE808A3DED}</ContentProjectGUID>
       <TargetPlatform>WindowsPhone</TargetPlatform>
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBirdContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBirdContent\obj\Windows Phone\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Gopi\code\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\</OutputDirectory>
+      <RootDirectory>Z:\cs\StickyBird\StickyBird\StickyBirdContent\</RootDirectory>
+      <LoggerRootDirectory>Z:\cs\StickyBird\StickyBird\StickyBird\</LoggerRootDirectory>
+      <IntermediateDirectory>Z:\cs\StickyBird\StickyBird\StickyBird\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>Z:\cs\StickyBird\StickyBird\StickyBird\bin\Windows Phone\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T09:41:18-07:00</Value>
+        <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2010-10-19T21:57:37.5375515-07:00</Value>
+        <Value>2011-10-08T00:21:52.7319429-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
